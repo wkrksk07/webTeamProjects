@@ -13,7 +13,10 @@ class SchoolMap {
     this.initRenderer()
     this.initLights()
     this.initControls()
-    this.addPlaceholder()
+    // this.addPlaceholder() // 임시 박스 제거
+    
+    // 사용자가 넣은 모델 로드
+    this.loadModel('/models/export-1775994514152.glb')
     
     // Resize handler
     window.addEventListener('resize', () => this.onWindowResize())
